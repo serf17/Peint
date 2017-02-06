@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:paddingLeft="0pt"
+    android:paddingRight="0pt"
+    android:paddingTop="0pt"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.serf.peint.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.example.serf.peint.CanvasView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/canvas"
+        />
+
+    <Button
+        android:text="Borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearCanvas"
+        android:id="@+id/button"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
